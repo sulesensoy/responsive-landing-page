@@ -1,0 +1,238 @@
+ /* General */
+
+ * {
+     box-sizing: border-box;
+ }
+
+ *::-webkit-scrollbar {
+     width: 5px;
+     background-color: #ededed;
+ }
+
+ *::-webkit-scrollbar-thumb {
+     background-color: #000;
+ }
+
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 14px;
+ }
+
+ img {
+     display: block;
+     height: auto;
+     max-width: 100%;
+ }
+
+ header, section, footer, aside, nav, main, article, figure {
+     display: block;
+ }
+
+ button {
+     border: none;
+     color: #fff;
+     padding: 14px 28px;
+     font-size: 16px;
+     cursor: pointer;
+     background-color: #54c454;
+     border-radius: 3px;
+ }
+
+ button:hover {
+     background-color: green;
+ }
+
+ label {
+     font-size: 20px;
+ }
+
+ input, textarea {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 20px 0;
+     box-sizing: border-box;
+     border: black;
+     border-radius: 5px;
+ }
+
+ input[type=submit] {
+     background-color: green;
+     color: #fff;
+     cursor: pointer;
+     font-size: 18px;
+ }
+
+ /* Navbar */
+
+ nav {
+     position: fixed;
+     width: 100%;
+ }
+
+ nav .container {
+     width: 1200px;
+     margin: auto;
+     margin-top: 8px;
+ }
+
+ nav .logo a {
+     font-size: 22px;
+     color: #fff;
+     max-width: 250;
+     margin: auto;
+ }
+
+ nav .menu {
+     float: right;
+ }
+
+ .novtap {
+     background-color: #000;
+     overflow: hidden;
+     border-bottom: 1.5px solid #54c3ee;
+     text-transform: uppercase;
+ }
+
+ .novtap a {
+     display: block;
+     float: left;
+     color: #999;
+     padding: 14px 18px;
+     text-decoration: none;
+     font-size: 17px;
+ }
+
+ .novtap a:hover {
+     color: #fff
+ }
+
+ .novtap .icon {
+     float: right;
+     display: none;
+ }
+
+ /* Header */
+
+ header {
+     height: 80vh;
+     padding: 100px 30px 30px 30px;
+     text-align: center;
+     background: #000 url("../img/clarity.jpg") no-repeat center center;
+     background-size: cover;
+     color: #fff;
+     font-size: 25px;
+ }
+
+ header h2 span {
+     color: #54c454;
+ }
+
+ header P {
+     font-size: 18px;
+     font-weight: bold;
+ }
+
+ /* Content */
+
+ section {
+     margin: 100px 0;
+     padding: 100px;
+ }
+
+ section p {
+     line-height: 28px;
+     text-align: justify;
+ }
+
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ .col-66 {
+     float: left;
+     width: 66.66666%;
+     padding: 20px;
+ }
+
+ .col-33 {
+     float: left;
+     width: 33.33333%;
+     padding: 20px;
+ }
+
+ .Firsttitle {
+     font-size: 60px;
+     font-weight: bold;
+ }
+
+ .Secondtitle {
+     font-size: 40px;
+     font-weight: bold;
+     color: #54c454;
+ }
+
+ .Content {
+     font-size: 24px;
+ }
+
+ /* Footer */
+
+ footer {
+     background: url("../img/map.png") no-repeat;
+     background-size: contain;
+ }
+
+ footer section {
+     width: 65%;
+     margin: auto;
+ }
+
+ footer p {
+     width: 100%;
+     margin: 0px;
+     background-color: #323544;
+     color: #999;
+     text-align: center;
+     line-height: 70px;
+ }
+
+ footer a {
+     color: #54c4cb;
+     text-decoration: none;
+ }
+
+ @media screen and (max-width: 1000px) {
+     /*navbar */
+     .novtap .menu a {
+         display: none;
+     }
+     .novtap .menu {
+         float: none;
+     }
+     .novtap a.icon {
+         display: block;
+     }
+     .novtap.responsive .icon {
+         position: absolute;
+         right: 0;
+         top: 8px;
+         z-index: 999;
+     }
+     .novtap.responsive a {
+         float: none;
+         display: block;
+         text-align: center;
+     }
+     .novtap.responsive .logo {
+         max-width: 250px;
+         margin: auto;
+     }
+ }

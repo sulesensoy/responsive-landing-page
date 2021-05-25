@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Web Project with Html5 and CSS3</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!--[if It IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="novtap" id="novtapId">
+      <div class="container">
+        <div class="logo">
+          <a href="project1.html">Logo Space</a>
+        </div>
+        <div class="menu">
+          <a href="#header" class="active">Home</a>
+          <a href="#aboutUs">About</a>
+          <a href="#whyUs">Why Us ?</a>
+          <a href="#contact">Contact</a>
+          <a href="javascript:void(0)" class="icon" onclick="responsiveMenu()"
+            >&#9776;</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!--Header-->
+    <header id="header">
+      <h2>Welcome to <span> One to One </span></h2>
+      <p>At One to One,we improve and heal your body.</p>
+    </header>
+
+    <!--Content-->
+
+    <main>
+      <!-- About Us-->
+      <section id="aboutUs">
+        <div class="row">
+          <div class="col-66">
+            <h1 class="Firsttitle">About Us!</h1>
+            <h2 class="Secondtitle">We are the best !</h2>
+            <p>
+              <span class="Content">One to One Pilates</span> was founded in
+              2018 by Songül Keklik in Tekirdag. One to One is an exclusive,
+              boutique style studio that specializes in private and semi private
+              sessions.Our studio's private setting provides a peaceful and
+              intimate experience to ensure focus and connection to mind, body,
+              & soul. The studio is equipped with commercial grade Merrithew
+              reformers to achieve...
+            </p>
+            <button>Read More</button>
+          </div>
+          <div class="col-33">
+            <img src="img/about.jpg" alt="AboutUs" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Us-->
+      <section id="whyUs" style="background-color: #000; color: #fff">
+        <div class="row">
+          <div class="col-33">
+            <img src="img/why us.jpg" alt="Clarity" />
+          </div>
+          <div class="col-66">
+            <h1 class="Firsttitle">Why Us!</h1>
+            <h2 class="Secondtitle">
+              One to One,<span style="color: #fff">Who ?</span>
+            </h2>
+            <p>
+              <span class="Content">One to One Pilates</span> was founded in
+              2018 by Songül Keklik in Tekirdag. One to One is an exclusive,
+              boutique style studio that specializes in private and semi private
+              sessions.Our studio's private setting provides a peaceful and
+              intimate experience to ensure focus and connection to mind, body,
+              & soul. The studio is equipped with commercial grade Merrithew
+              reformers to achieve...
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--Footer-->
+    <footer>
+      <section id="contact">
+        <h1 class="Firsttitle" style="text-align: center">Contact Form</h1>
+        <form>
+          <label>Name</label>
+          <input type="text" name="required" placeholder="Name" />
+          <label>E-mail</label>
+          <input type="e-mail" name="required" placeholder="E-mail" />
+          <label>Referance Code</label>
+          <input type="number" name="required" placeholder="Referance Code" />
+          <textarea rows="8"> </textarea>
+          <input type="submit" name="" value="Submit" />
+        </form>
+      </section>
+      <p>&copy; Copyright 2021 Powered by <a href="#">sulesensoy.com</a></p>
+    </footer>
+
+    <script type="text/javascript">
+      function responsiveMenu() {
+        var x = document.getElementById("novtapId");
+        if (x.className === "novtap") {
+          x.className += " responsive";
+        } else {
+          x.className = "novtap";
+        }
+      }
+    </script>
+  </body>
+</html>
